@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДӘМДІ ҚАЗАН — Меню</title>
+    <style>
+        body {
+            background-color: #2c1b10;
+            color: #d4af37;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .main-logo {
+            max-width: 120px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #d4af37;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Стили Аккордеона */
+        details {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 10px;
+            border: 1px solid #d4af37;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #3d2b1f;
+            transition: all 0.3s ease;
+        }
+
+        summary {
+            padding: 18px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+            color: #f1e5ac;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        summary::-webkit-details-marker { display: none; }
+
+        details[open] {
+            background-color: #2c1b10;
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #d4af37;
+            background-color: #4e3629;
+        }
+
+        /* Контейнер для блюд внутри списка */
+        .menu-content {
+            padding: 10px;
+        }
+
+        .dish-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 12px 5px;
+            border-bottom: 1px dotted #5e4331;
+        }
+
+        .dish-item:last-child { border-bottom: none; }
+
+        .dish-name {
+            font-size: 1em;
+            padding-right: 10px;
+            flex: 1;
+        }
+
+        .dish-price {
+            font-weight: bold;
+            color: #f1e5ac;
+            white-space: nowrap;
+        }
+
+        .dish-desc {
+            font-size: 0.85em;
+            color: #e0c097;
+            font-style: italic;
+            margin-top: 4px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="logo.png" alt="Логотип" class="main-logo">
+    </div>
+
+    <h1>ДӘМДІ ҚАЗАН</h1>
+
+    <details>
+        <summary>☕ Завтраки</summary>
+        <div class="menu-content">
+            <div class="dish-item">
+                <div class="dish-name">Яйцо с колбасой</div>
+                <div class="dish-price">1200 〒</div>
+            </div>
+            <div class="dish-item">
+                <div class="dish-name">Каши (Рисовая, Манная, Геркулес)</div>
+                <div class="dish-price">600 〒</div>
+            </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>🍲 Первые блюда</summary>
+        <div class="menu-content">
+            <div class="dish-item"><div class="dish-name">Пельмени домашние</div><div class="dish-price">1590 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Пельмени уйгурские</div><div class="dish-price">1800 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Шорпа</div><div class="dish-price">1700 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Рассольник</div><div class="dish-price">1500 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Лагман домашний</div><div class="dish-price">1690 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Борщ</div><div class="dish-price">1700 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Солянка</div><div class="dish-price">1800 〒</div></div>
+        </div>
+    </details>
+
+    <details>
+        <summary>🍖 Вторые блюда</summary>
+        <div class="menu-content">
+            <div class="dish-item"><div class="dish-name">Манты (5 штук)</div><div class="dish-price">1800 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Плов ташкентский</div><div class="dish-price">1800 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Куырдак</div><div class="dish-price">3100 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Фри с мясом</div><div class="dish-price">2500 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Дапанжи</div><div class="dish-price">1890 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Бризоль с гарниром</div><div class="dish-price">2000 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Жаркое с говядиной</div><div class="dish-price">2000 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Жаркое с курицей</div><div class="dish-price">1600 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Мясо по тайский</div><div class="dish-price">2290 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Курица запеченная с гарниром</div><div class="dish-price">1600 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Орама нан с подливой</div><div class="dish-price">1800 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Котлеты с гарниром</div><div class="dish-price">1600 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Печень с луком (гарнир)</div><div class="dish-price">1800 〒</div></div>
+             <div class="dish-item"><div class="dish-name">Фаршированный перец (гарнир)</div><div class="dish-price">1800 〒</div></div>
+            
+
+        </div>
+    </details>
+
+    <details>
+        <summary>🍜 Лагманы / Ганфаны</summary>
+        <div class="menu-content">
+            <div class="dish-item"><div class="dish-name">Суйру / Гуйру лагман</div><div class="dish-price">1690 / 1790 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Хау-ха лагман (с яйцом)</div><div class="dish-price">1990 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Могуру (с грибами)</div><div class="dish-price">2100 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Кабырга лагман</div><div class="dish-price">2700 〒</div></div>
+        </div>
+    </details>
+
+    <details>
+        <summary>🥐 Выпечка</summary>
+        <div class="menu-content">
+            <div class="dish-item"><div class="dish-name">Самса / Беляш</div><div class="dish-price">450 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Баурсаки (1 кг)</div><div class="dish-price">1900 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Лепешка</div><div class="dish-price">250 〒</div></div>
+        </div>
+    </details>
+
+    <details>
+        <summary>🥗 Салаты</summary>
+        <div class="menu-content">
+            <div class="dish-item"><div class="dish-name">Свежий / Смачный</div><div class="dish-price">800 〒</div></div>
+            <div class="dish-item"><div class="dish-name">Греческий / Ачичук</div><div class="dish-price">1200 / 800 〒</div></div>
+        </div>
+    </details>
+
+    <p style="margin-top: 40px; font-size: 0.8em; opacity: 0.7;">Приятного аппетита!</p>
+
+</body>
+</html>
